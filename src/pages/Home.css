@@ -1,0 +1,137 @@
+/* Home.css */
+
+/* Container for header elements */
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+/* Button styling */
+.action-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+/* Search input styling */
+.search-input {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.search-box {
+  background-color: #eee;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ccc;
+  width: 300px; /* Fixed width for search box */
+}
+
+/* Styling for sort and order dropdowns */
+.sort-label,
+.order-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sort-select,
+.order-select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+
+/* Container for product list */
+.product-list {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Styling for each product item */
+.product-item {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  text-align: center;
+  width: 200px;
+  transition: transform 0.3s ease; /* Adding transition for smooth hover effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-item:hover {
+  transform: translateY(-5px); /* Applying hover effect */
+}
+
+/* Styling for product image */
+.product-image {
+  width: 100%;
+  height: 200px; /* Fixed height for product images */
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 0.25rem;
+}
+
+/* Styling for action buttons (edit and delete) */
+.action-buttons {
+  margin-top: 0.5rem;
+}
+
+/* Overlay for update and add forms */
+.overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Form styling */
+.update-form,
+.add-form {
+  background-color: #fff;
+  padding: 1rem;
+  width: 50%;
+  max-width: 400px;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.save-button,
+.cancel-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  background-color: #3490dc;
+  color: #fff;
+  transition: background-color 0.3s ease; /* Adding transition for button hover effect */
+}
+
+.save-button:hover,
+.cancel-button:hover {
+  background-color: #2779bd; /* Darker shade on hover */
+}
+
+.cancel-button {
+  background-color: #e3342f;
+}

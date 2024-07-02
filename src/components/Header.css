@@ -1,0 +1,55 @@
+/* Header.css */
+.header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f1f5f9; /* slate-100 */
+  padding: 1rem; /* 4 */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.1); /* shadow-lg */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header:hover {
+  background-color: #eef2f7; /* lighter shade on hover */
+  box-shadow: 0 8px 12px -4px rgba(0, 0, 0, 0.1),
+    0 4px 8px -4px rgba(0, 0, 0, 0.1); /* deeper shadow on hover */
+}
+
+.logo-container {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  gap: 0.25rem; /* 1 */
+}
+
+.nav {
+  display: flex;
+  width: 50%;
+}
+
+.nav-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* 2 */
+  padding: 0.5rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-item:hover {
+  background-color: rgba(0, 0, 0, 0.05); /* subtle background color on hover */
+  transform: translateY(-2px); /* lift the item slightly on hover */
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
